@@ -78,7 +78,7 @@ network:
  #Set to 0 to compress everything, -1 to disable.
  batch-threshold: 256
  #Compression level used when sending batched packets. Higher = Uses More CPU, Less = More Bandwidth Usage
- compression-level: 2
+ compression-level: 4
  #Use AsyncTasks for compression. Adds half/one tick delay, less CPU load on main thread
  async-compression: true
  #Experimental, only for Windows. Tries to use UPnP to automatically port forward
@@ -117,7 +117,7 @@ chunk-sending:
 
 chunk-ticking:
  #Max amount of chunks processed each tick
- per-tick: 16
+ per-tick: 4
  #Radius of chunks around a player to tick
  tick-radius: 3
  light-updates: false
@@ -131,7 +131,7 @@ chunk-generation:
 
 ticks-per:
  animal-spawns: 400
- monster-spawns: 1
+ monster-spawns: 2
  autosave: 6000
  cache-cleanup: 900
 spawn-limits:
